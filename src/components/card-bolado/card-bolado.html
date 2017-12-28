@@ -1,0 +1,21 @@
+<!-- Generated template for the CardBoladoComponent component -->
+<div>
+	<ion-card>
+		<img [src]="cardBolado.imageUrl">
+		<ion-card-content>
+			<ion-card-title>
+				{{cardBolado.title}}
+			</ion-card-title>
+			<p>
+				{{cardBolado.content}}
+			</p>
+			<ion-grid>
+				<ion-row>
+					<ion-col offset-9 col-3>
+						<button ion-button color="secondary" outline small (click)="select()">Select</button>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+		</ion-card-content>
+	</ion-card>
+</div>
